@@ -1,0 +1,40 @@
+.nav-main-container {
+  background-color: var(--color-background) !important;
+}
+
+.nav-main-container li {
+  color: var(--color-text) !important;
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  transition: 0.5s;
+}
+
+.nav-main-container li:focus,
+.nav-main-container li:active {
+  font-weight: 600 !important;
+  transition: 0.5s;
+}
+
+/* .nav-main-container li.active {
+  font-weight: 700 !important;
+  font-size: 1.4rem !important;
+} */
+
+.nav-main-container li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  display: block;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.nav-main-container li a:hover::after,
+.nav-main-container li a:focus::after {
+  width: 100%;
+}
+
+/* .navbar{
+  box-shadow: 10px 10px lightblue;
+} */

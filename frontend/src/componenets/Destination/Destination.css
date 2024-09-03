@@ -1,0 +1,125 @@
+.campus {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(15, 50, 78, 0.7);
+}
+
+.layer h2 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 2rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer p {
+  width: 100%;
+  color: #fff;
+  font-size: 1.4rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer button {
+  padding: 0.6rem 2rem;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+
+  font-size: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border: 2px solid var(--color-primary);
+}
+
+.layer:hover h2 {
+  bottom: 60%;
+  opacity: 1;
+}
+
+.layer:hover p {
+  bottom: 40%;
+  opacity: 1;
+}
+
+.layer:hover button {
+  bottom: 20%;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .layer h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  .layer p {
+    font-size: 1rem;
+  }
+
+  .layer button {
+    font-size: 1rem;
+  }
+
+  .layer:hover h2 {
+    bottom: 65%;
+    opacity: 1;
+  }
+
+  .layer:hover p {
+    bottom: 45%;
+    opacity: 1;
+  }
+
+  .layer:hover button {
+    bottom: 25%;
+    opacity: 1;
+  }
+}

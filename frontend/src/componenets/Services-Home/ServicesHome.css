@@ -1,0 +1,33 @@
+.card-icon {
+  width: 90px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: #0f324e !important;
+  color: var(--color-white) !important;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-height: 240px;
+}
+
+.card:hover {
+  background-color: #0f324ee4 !important;
+}
+
+.main-container h1 {
+  /* font-size: 5rem;
+  line-height: 6rem;  
+  margin-bottom: 1.75em;
+   */
+  margin-top: 5vh;
+
+}
+
+/* .start-btn {
+  
+} */

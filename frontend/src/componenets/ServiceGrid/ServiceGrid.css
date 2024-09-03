@@ -1,0 +1,110 @@
+.service-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #c9d6ff;
+
+}
+
+.service-img img{
+    margin: 50px;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+
+}
+
+.service-container.even .service-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-container.odd .service-content {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of image and text */
+    margin-left: 50px;
+}
+
+
+
+
+.service-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-text{
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 50px;
+    
+}
+
+.serve-student-heading{
+    line-height: 40px;
+}
+
+.serve-student-para{
+    font-size: 16px;
+    font-weight:400;
+    line-height: 24px;
+    color: #64647a;
+}
+
+.serve-student-heading2{
+    font-size: 18px;
+    line-height: 41px;  
+}
+
+.custom-list {
+    list-style-type: none; 
+    padding-left: 0; 
+  }
+  
+  .custom-list li {
+    margin: 10px 0;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  .custom-list li:before {
+    content: "";
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../../assets/Services/star.png'); /* Replace 'path_to_your_image.png' with your image path */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+@media only screen and (max-width: 767px) {
+    .service-container.even .service-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service-container.odd .service-content {
+        display: flex;
+        flex-direction: column; /* Reverse the order of image and text */
+        
+    }
+    .service-content{
+        margin: auto;
+    }
+  
+    .service-img,
+    .service-text {
+      width: 100%;
+    }
+  
+    .service-img {
+      order: -1; /* Change the order to display image on top */
+      margin-bottom: 20px; /* Add some space between image and text */
+    }
+  }

@@ -1,0 +1,124 @@
+.body {
+  font-family: 'Ubuntu, sans-serif';
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/pexels-anand-raj-2880979.jpg);
+  padding: 50px 0px;
+  position: relative;
+  /* Make sure it's positioned relatively for the overlay */
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value as needed */
+.enquiryForm {
+
+  /* position: relative; */
+  max-width: 40%;
+  margin: 50px auto;
+
+
+  background-color: #fff3f3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: 30%;
+  z-index: 2;
+}
+
+.title {
+  text-align: center;
+  color: #373737;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.formControl,
+.formSelect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #555;
+}
+
+.formControlFocus,
+.formSelectFocus {
+  border-color: #373737;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+}
+
+.btnSubmit,
+.btnClose {
+  background-color: rgba(50, 48, 48, 0.55);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnSubmit:hover,
+.btnClose:hover {
+  background-color: #212121;
+  box-shadow: 0 0 10px #3e3e3e;
+}
+
+@media screen and (max-width: 768px) {
+
+  .enquiryForm {
+    margin-left: 90px;
+    margin-right: 20px;
+  }
+}
+
+.hero-image {
+  /* width: 100%;
+  height: 100%; */
+  position: none;
+  overflow: none;
+  z-index: -1;
+  background-position: center;
+  object-fit: cover;
+
+}
+
+.hero-img {
+  /* width: 100% !important;
+  height: 100% !important;
+  */
+  object-fit: cover !important;
+}
+
+
+.buttonContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .enquiryForm {
+    margin-left: 90px;
+    margin-right: 20px;
+  }
+}

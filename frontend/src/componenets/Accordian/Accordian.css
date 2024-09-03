@@ -1,0 +1,94 @@
+/* Accordian.css */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px; /* Adjust the gap between columns as needed */
+  margin-top: 2vh;
+}
+
+.image {
+  grid-column: span 6;
+  /* max-height: 100%; */
+  /* margin-top: au; */
+  
+}
+
+.accordian {
+  grid-column: span 6; /* Accordian occupies 6 columns on the right */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-content: center;
+  background-color: #cdf1ec;
+  margin-bottom: auto;
+  
+}
+
+.item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  /* max-height: 10%; */
+}
+
+.title {
+  background-color: #f1f1f1;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.title:hover {
+  background-color: #ddd;
+}
+
+.content {
+  display: none;
+  padding: 15px;
+}
+
+.active {
+  display: block;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* On small screens, stack elements in a single column */
+  }
+
+  .image,
+  .accordian {
+    grid-column: span 12; 
+    /* Both image and Accordian occupy the full width on small screens */
+  }
+
+  .title {
+    padding: 12px;
+  }
+
+  .content {
+    padding: 12px;
+  }
+}
+/* Accordian.css */
+
+/* ... (existing styles) */
+
+.header {
+  grid-column: span 12; /* Header occupies the full width */
+  text-align: center; /* Center the content */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  margin-top: 5%;
+}
+
+/* ... (existing styles) */
+/* Accordian.css */
+
+/* ... (existing styles) */
+.section-background{
+  background-color: #ffffff3f;
+  margin-top: 55px;
+  
+}
+
